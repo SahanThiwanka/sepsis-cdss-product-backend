@@ -1,0 +1,23 @@
+{
+  "model_name": "A+B Tuned Isotonic-Calibrated LightGBM",
+  "base_config": "AB_LGBM_4_shallow",
+  "model_version": "v1.0.0",
+  "calibration": "isotonic",
+  "threshold": 0.05,
+  "normalized_cinc_utility": 0.3495,
+  "brier_score": 0.0166,
+  "risk_levels": {
+    "low": {
+      "min": 0.0,
+      "max": 0.019
+    },
+    "moderate": {
+      "min": 0.02,
+      "max": 0.049
+    },
+    "high": {
+      "min": 0.05,
+      "max": 1.0
+    }
+  }
+}

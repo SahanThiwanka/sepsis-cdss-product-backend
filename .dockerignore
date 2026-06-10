@@ -1,0 +1,9 @@
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.env
+sepsis_cdss.db
+.pytest_cache
+.mypy_cache
