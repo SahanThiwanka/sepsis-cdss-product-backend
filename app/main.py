@@ -12,6 +12,7 @@ from app.api.audit_logs import router as audit_logs_router
 from app.api.reports import router as reports_router
 from app.api.auth import router as auth_router
 from app.api import system_health
+from app.api import monitoring
 
 app = FastAPI(
     title="Sepsis CDSS API",
@@ -44,6 +45,11 @@ app.include_router(
     system_health.router,
     prefix="/api/system-health",
     tags=["System Health"],
+)
+app.include_router(
+    monitoring.router,
+    prefix="/api/monitoring",
+    tags=["Monitoring"],
 )
 
 @app.get("/")

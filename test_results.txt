@@ -1,0 +1,15 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.1, pytest-9.0.3, pluggy-1.6.0 -- C:\Users\Sahan\OneDrive\Desktop\sepsis-cdss-product\backend\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Sahan\OneDrive\Desktop\sepsis-cdss-product\backend
+plugins: anyio-4.13.0
+collecting ... collected 6 items
+
+tests/test_smoke_api.py::test_backend_health PASSED                      [ 16%]
+tests/test_smoke_api.py::test_login_admin PASSED                         [ 33%]
+tests/test_smoke_api.py::test_model_info PASSED                          [ 50%]
+tests/test_smoke_api.py::test_system_health PASSED                       [ 66%]
+tests/test_smoke_api.py::test_monitoring PASSED                          [ 83%]
+tests/test_smoke_api.py::test_prediction_workflow PASSED                 [100%]
+
+============================== 6 passed in 3.01s ==============================
